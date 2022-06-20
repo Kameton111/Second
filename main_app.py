@@ -126,7 +126,7 @@ class CheckSits(Screen):
         self.next_screen = False
 
         instr = Label(text=txt_sits, size_hint=(0.5, 1))
-        self.lbl_sits = Sits(3)
+        self.lbl_sits = Sits(15)
         self.run = Runner(total=3, steptime=1.5, size_hint=(0.4, 1))
         self.run.bind(finished=self.run_finished)
 
@@ -171,7 +171,7 @@ class PulseScr2(Screen):
         instr = Label(text=txt_test3)
     
         line1 = BoxLayout(size_hint=(0.8, None), height='30sp')
-        self.lbl_sec = Seconds(3)
+        self.lbl_sec = Seconds(30)
         self.lbl_sec.bind(done=self.sec_finished)
         self.lbl1 = Label(text='Считайте пульс')
 
